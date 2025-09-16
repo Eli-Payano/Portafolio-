@@ -1,0 +1,31 @@
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vs/
+
+# Carpetas de compilación
+bin/
+obj/
+
+# Archivos de depuración
+*.pdb
+*.exe
+*.dll
+
+# Archivos de base de datos temporales
+*.db
+*.dbwal
+*.idx
+*.backup
+*.datos
+*.ddl
+
+# Archivos de cache
+*.cache
+*.up2date
+
+# Archivos de recursos generados
+*.designer.cs
+.vscode/extensions/
