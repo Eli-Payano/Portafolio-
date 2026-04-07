@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellitas - Adopción de Perritos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <h1>🐶 Huellitas</h1>
+        <a class="cta-link" href="#solicitud">Quiero adoptar</a>
+      </nav>
+
+      <section class="hero-content">
+        <div>
+          <p class="eyebrow">Conecta con tu nuevo mejor amigo</p>
+          <h2>Adopta, cuida y transforma una vida</h2>
+          <p>
+            Plataforma para encontrar perritos rescatados, conocer su historia y
+            completar una solicitud de adopción responsable.
+          </p>
+          <button id="verPerritosBtn" class="primary-btn">Ver perritos</button>
+        </div>
+        <article class="hero-metrics" aria-label="Métricas de impacto">
+          <h3>Impacto en números</h3>
+          <ul>
+            <li><strong>128</strong> adopciones logradas</li>
+            <li><strong>42</strong> refugios aliados</li>
+            <li><strong>95%</strong> de adopciones con seguimiento</li>
+          </ul>
+        </article>
+      </section>
+    </header>
+
+    <main>
+      <section id="catalogo" class="section">
+        <div class="section-header">
+          <h2>Perritos disponibles</h2>
+          <div class="filters">
+            <label>
+              Tamaño
+              <select id="filtroTamano">
+                <option value="todos">Todos</option>
+                <option value="pequeno">Pequeño</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+              </select>
+            </label>
+            <label>
+              Edad
+              <select id="filtroEdad">
+                <option value="todos">Todas</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="joven">Joven</option>
+                <option value="adulto">Adulto</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div id="listaPerritos" class="cards"></div>
+      </section>
+
+      <section id="solicitud" class="section form-section">
+        <h2>Solicitud de adopción</h2>
+        <p>
+          Completa este formulario para iniciar el proceso. Nuestro equipo te
+          contactará en menos de 48 horas.
+        </p>
+        <form id="solicitudForm">
+          <div class="field-grid">
+            <label>
+              Nombre completo
+              <input type="text" name="nombre" required />
+            </label>
+            <label>
+              Correo electrónico
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Ciudad
+              <input type="text" name="ciudad" required />
+            </label>
+            <label>
+              ¿Tienes patio?
+              <select name="patio" required>
+                <option value="">Selecciona una opción</option>
+                <option>Sí</option>
+                <option>No</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            ¿Por qué quieres adoptar?
+            <textarea name="motivo" rows="4" required></textarea>
+          </label>
+
+          <button class="primary-btn" type="submit">Enviar solicitud</button>
+        </form>
+        <p id="mensajeExito" class="success" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Hecho con ❤️ para promover adopciones responsables.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

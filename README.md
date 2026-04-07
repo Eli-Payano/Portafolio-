@@ -8,6 +8,7 @@ La idea es que este repositorio funcione como una **carta de presentación**, mo
 ---
 
 ## ¿Qué encontrarás aquí?
+- **App de adopción de perritos (MVP web):** `app-adopcion-perritos/` con catálogo, filtros y formulario de solicitud.
 - Proyectos académicos y personales que muestran mi práctica en programación, bases de datos y desarrollo web.  
 - Ejercicios y aplicaciones que construyo para reforzar mi lógica de programación y el uso de distintas tecnologías.  
 - Una **Wiki** donde podrás ver la documentación detallada de cada proyecto, sus funcionalidades y el stack utilizado.  
